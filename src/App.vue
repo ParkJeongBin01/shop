@@ -1,8 +1,12 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router';
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterView } from 'vue-router';
+import DefaultLayout from '@/components/layouts/DefaultLayout.vue';
 </script>
 
-<template></template>
+<template>
+  <DefaultLayout>
+    <RouterView />
+  </DefaultLayout>
+</template>
 
 <style scoped></style>
