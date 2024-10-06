@@ -2,4 +2,10 @@
 import { ref } from 'vue';
 </script>
 
-<template></template>
+<template>
+  <div class="container-fluid px-0">
+    <section class="mb-5">
+      <div>s5445</div>
+    </section>
+  </div>
+</template>

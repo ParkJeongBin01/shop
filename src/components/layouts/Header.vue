@@ -11,7 +11,7 @@ const toggleshow = () => (state.isNavShow = !state.isNavShow);
 </script>
 
 <template>
-  <nav class="header sticky-top shadow">
+  <nav class="navber sticky-top shadow">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
         <div class="Logo" style="font-weight: bold">styleshop</div>
@@ -26,8 +26,17 @@ const toggleshow = () => (state.isNavShow = !state.isNavShow);
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div :class="navClass" id="collapsibleNavbar" style="flex-grow: 0">
-        <div style="flex-direction: row; display: flex">
+      <div :class="navClass" id="collapsibleNavbar">
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            display: flex;
+            gap: 1rem;
+          "
+        >
           <router-link to="/top">상의</router-link>
           <router-link to="/bottom">하의</router-link>
         </div>

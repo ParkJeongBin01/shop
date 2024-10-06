@@ -4,9 +4,9 @@ import Header from './Header.vue';
 </script>
 
 <template>
-  <div>
+  <div class="fauid-container">
     <Header />
-    <div>
+    <div class="content">
       <slot></slot>
     </div>
     <!-- <Footer /> -->
